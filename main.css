@@ -1,0 +1,132 @@
+:root {
+    --clr-cyan: hsl(179, 62%, 43%);
+    --clr-bright-yellow: hsl(71, 73%, 54%);
+    --clr-light-gray: hsl(204, 43%, 93%);
+    --clr-grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+.join,
+.subscription,
+.info {
+    padding: 40px;
+}
+
+h2 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Karla';
+    background-color: var(--clr-light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width : 750px) {
+    body {
+        height: 130vh;
+    }
+}
+
+section {
+    width: min(650px, 80%);
+    display: grid;
+    grid-template-areas: "head head " "subs info";
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (max-width : 750px) {
+    section {
+        grid-template-areas: "head head " "subs subs" "info info";
+    }
+}
+
+.join {
+    grid-area: head;
+    background-color: #fff;
+}
+
+.join h1 {
+    color: var(--clr-cyan);
+    margin-bottom: 15px;
+}
+
+.join p:first-of-type {
+    color: var(--clr-bright-yellow);
+    margin-bottom: 15px;
+}
+
+.join p:last-of-type {
+    color: var(--clr-grayish-blue);
+    line-height: 1.7;
+}
+
+.subscription {
+    grid-area: subs;
+    background-color: var(--clr-cyan);
+}
+
+.salary {
+    color: var(--clr-light-gray);
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.salary span {
+    font-size: 15px;
+    font-weight: normal;
+    display: block;
+    margin-left: 10px;
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.subscription p:last-of-type {
+    color: var(--clr-light-gray);
+}
+
+.subscription a {
+    text-decoration: none;
+    background-color: var(--clr-bright-yellow);
+    color: #fff;
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0;
+    margin-top: 37px;
+    padding: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 71px -17px #000;
+    cursor: pointer;
+}
+
+.info {
+    grid-area: info;
+    background-color: hsl(180, 46%, 51%);
+}
+
+.info ul {
+    list-style: none;
+}
+
+.info ul li {
+    color: hsla(204, 43%, 93%, .5);
+    margin-bottom: 5px;
+}
