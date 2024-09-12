@@ -6,6 +6,6 @@
 
 Thanks for checking out this front-end coding challenge.
 
-Demo : [  ]
+Demo : [ https://abuobayeh04.github.io/Frontend-Mentor-Single-Price-Grid-Component/ ]
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
